@@ -407,6 +407,29 @@ team
   text-align: center;
 }
 
+.cover-photo {
+  position: relative;
+  width: 100%;
+  height: 75vh; /* Adjust this to control the vertical height */
+  overflow: hidden;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills the area while preserving aspect ratio */
+  display: block;
+}
+
+.cover-photo.cover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
 
 .cover-video-container {
   position: relative;
@@ -541,19 +564,6 @@ process
 */
 
 /* Styling for the cover photo section */
-.cover-photo {
-  position: relative;
-  width: 100%;
-  height: 50vh; /* Adjust this to control the vertical height */
-  overflow: hidden;
-}
-
-.cover-photo img {
-  padding-top: 10px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* Styling for the transparent text with an outline */
 .cover-text {
@@ -576,37 +586,75 @@ process
 
 
 /* Styling for the wider three-part section */
+/* Core section container */
 .wider-three-part-section {
-  width: 80%; /* Adjust to ensure it feels centered */
-  max-width: 1200px; /* Limit the maximum width */
-  margin: 0 auto; /* Center the section on the page */
-  padding: 20px 0; /* Vertical padding for spacing */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.wider-three-part-section .part {
+/* Each part row */
+.part {
+  margin-bottom: 40px;
+}
+
+/* Flex wrapper inside each part */
+.part-inner {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  justify-content: center; /* Center content within each part */
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.wider-three-part-section .part-icon {
-  width: 100px; /* Adjust as needed */
+/* Image/icon */
+.part-icon {
+  width: 100px;
   height: auto;
-  margin-right: 20px; /* Space between icon and text */
+  flex-shrink: 0;
 }
 
-.wider-three-part-section .part-content {
+/* Text block */
+.part-content {
   flex: 1;
+  max-width: calc(100% - 120px); /* Prevents icon+text from exceeding container */
+  box-sizing: border-box;
 }
 
-.wider-three-part-section h3 {
+/* Headings and text */
+.wider-three-part-section h4 {
   margin-bottom: 10px;
+  font-size: 24px;
+  color: #5f87ab;
 }
 
 .wider-three-part-section p {
   line-height: 1.6;
+  color: #222;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .part-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .part-content {
+    max-width: 100%;
+  }
+
+  .part-icon {
+    margin-bottom: 10px;
+  }
+}
+
 
 .button-section {
   display: flex;
@@ -1389,5 +1437,3 @@ responsive
     right: 10px;
   }
 }
-
-
