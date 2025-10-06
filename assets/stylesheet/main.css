@@ -36,7 +36,7 @@ Blue: #729bbf
     background-color: whitesmoke;
   color: #ffffff;
   text-align: center;
-  padding: 80px 20px;
+  padding: 0 20px 80px 20px;
   margin: 10px auto;
   border-radius: 12px;
   max-width: 900px;
@@ -75,15 +75,6 @@ Blue: #729bbf
     max-width: 100%; 
     height: auto; 
     display: block; 
-}
-
-@media (max-width: 600px) {
-    .pelogo img {
-        /* On very small screens, you might want to increase its size slightly for visibility */
-        width: 75%; 
-        /* Or set a minimum size so it doesn't become too small to see */
-        min-width: 120px; 
-    }
 }
 
   
@@ -816,18 +807,16 @@ work
 /* Introduction Section Styling */
 .intro-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
   background-color: #ffffff;
-  margin-bottom: 10px;
+
 }
 
 .intro-section h2 {
-  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
-  padding-bottom: 10px; /* Space between text and line */
   font-weight: bold; /* Makes the text bold */
 }
 
