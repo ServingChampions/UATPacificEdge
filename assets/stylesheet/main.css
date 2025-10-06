@@ -77,6 +77,15 @@ Blue: #729bbf
     display: block; 
 }
 
+@media (max-width: 600px) {
+    .pelogo img {
+        /* On very small screens, you might want to increase its size slightly for visibility */
+        width: 75%; 
+        /* Or set a minimum size so it doesn't become too small to see */
+        min-width: 120px; 
+    }
+}
+
   
   body {
     background: white;
