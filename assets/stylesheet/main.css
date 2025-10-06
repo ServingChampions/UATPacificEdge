@@ -62,6 +62,21 @@ Blue: #729bbf
   Custom Style
     ========================================
   */
+
+
+  .pelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; 
+}
+
+.pelogo img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
   
   body {
     background: white;
