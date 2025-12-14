@@ -61,8 +61,8 @@ Blue: #729bbf
   
   /* Header Styling */
 .primary-header {
-  background-color: #729bbf; /* Background color */
-  color: white;
+  background-color: white; /* Background color */
+  color: #729bbf;
   padding: 10px 0; /* Vertical padding */
 }
 
@@ -92,7 +92,7 @@ Blue: #729bbf
 }
 
 .primary-nav a {
-  color: white; /* Link color */
+  color: #729bbf; /* Link color */
   text-decoration: none; /* Remove underline */
   font-family: 'Lato', sans-serif; /* Font style */
   font-weight: 300; /* Light font weight */
@@ -100,7 +100,7 @@ Blue: #729bbf
 }
 
 .primary-nav a:hover {
-  color: #ffffff; /* Hover color */
+  color: black; /* Hover color */
 }
 
 /* Footer Contact Info Styling */
@@ -143,7 +143,7 @@ Blue: #729bbf
   display: block;
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #729bbf;
   margin: 4px 0;
   transition: 0.3s;
 }
@@ -1055,7 +1055,7 @@ responsive
     display: none; /* Hidden by default */
     flex-direction: column;
     width: 100%;
-    background-color: #729bbf; /* Match the header background */
+    background-color: white; /* Match the header background */
     text-align: center; /* Center text in the nav */
   }
 
