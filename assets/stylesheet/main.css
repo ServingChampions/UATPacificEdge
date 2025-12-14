@@ -292,7 +292,7 @@ Blue: #729bbf
 }
 
 .part-content {
-  text-align: left; /* Align text to the left */
+ 
   width: 70%; /* Adjust width to fit with icon */
 }
 
@@ -587,6 +587,7 @@ process
 
 /* Styling for the wider three-part section */
 /* Core section container */
+
 .wider-three-part-section {
   width: 100%;
   max-width: 1200px;
@@ -594,7 +595,13 @@ process
   padding: 40px 20px;
   box-sizing: border-box;
   overflow-x: hidden;
+  
+  /* NEW: This centers the inner .part divs */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
+
 
 /* Each part row */
 .part {
