@@ -536,6 +536,7 @@ team
   width: 100%;
   max-width: 300px; /* Set a max width for the photo */
   border-radius: 10px; /* Optional: Add a slight border radius for rounded corners */
+  padding-left: 75px;
 }
 
 /* Styling for the bio details */
@@ -1245,6 +1246,13 @@ responsive
     margin-bottom: 20px; /* Add spacing below the photo for mobile */
     flex-basis: 100%;
   }
+
+  .bio-photo img {
+  width: 100%;
+  max-width: 300px; /* Set a max width for the photo */
+  border-radius: 10px; /* Optional: Add a slight border radius for rounded corners */
+  padding-left: 0px;
+}
 
   .bio-details {
     flex-basis: 100%; /* Make the text section full width on mobile */
