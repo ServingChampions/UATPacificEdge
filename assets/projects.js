@@ -1,4 +1,27 @@
 const myProjects = [
+{
+    "title": "Orange Park Acres - Spanish Inspired",
+    "summary": "This Spanish Revival residence blends classic California architecture with modern construction standards. The project features traditional stucco finishes, clay tile roofing, arched openings, and custom iron and wood detailing, executed with careful attention to authenticity and craftsmanship. Coordinated from pre-construction through completion, the result is a timeless home that honors Spanish Revival design while meeting today’s performance.",
+    "specs": {
+      "Location": "Orange Park Acres"
+    },
+    "designTeam": [
+      "Designer - Jennifer Herring"
+    ],
+    "images": [
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/opvid.mov?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op1.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op2.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op3.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op4.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op5.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op6.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op7.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op8.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op9.jpg?raw=true",
+      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op10.jpg?raw=true",
+    ]
+  },
   {
     "title": "Anaheim Hills - Spanish Revival",
     "summary": "Spanish inspired home nestled into the hills on an acre lot. New construction project with a remodeled hardscape to tie in the Spanish hacienda style.",
@@ -176,30 +199,6 @@ const myProjects = [
       "https://github.com/ServingChampions/RegalPhotos/blob/main/newportcoast2/h32.jpeg?raw=true",
       "https://github.com/ServingChampions/RegalPhotos/blob/main/newportcoast2/h33.jpeg?raw=true",
       "https://github.com/ServingChampions/RegalPhotos/blob/main/newportcoast2/h34.jpeg?raw=true"
-    ]
-  },
-
-{
-    "title": "Orange Park Acres - Spanish Inspired",
-    "summary": "This Spanish Revival residence blends classic California architecture with modern construction standards. The project features traditional stucco finishes, clay tile roofing, arched openings, and custom iron and wood detailing, executed with careful attention to authenticity and craftsmanship. Coordinated from pre-construction through completion, the result is a timeless home that honors Spanish Revival design while meeting today’s performance.",
-    "specs": {
-      "Location": "Orange Park Acres"
-    },
-    "designTeam": [
-      "Designer - Jennifer Herring"
-    ],
-    "images": [
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/opvid.mov?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op1.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op2.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op3.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op4.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op5.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op6.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op7.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op8.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op9.jpg?raw=true",
-      "https://github.com/ServingChampions/RegalPhotos/blob/main/orangepark/op10.jpg?raw=true",
     ]
   },
 ];
