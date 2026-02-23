@@ -699,9 +699,9 @@ process
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 5px auto 30px; /* Tighter space around the top section */
+  margin: 5px auto 40px; /* Space around the top section */
   padding: 0 20px;
-  gap: 40px; 
+  gap: 40px; /* Space between text and image */
 }
 
 .process-split-text {
@@ -730,34 +730,22 @@ process
 .process-split-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px; 
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); 
-}
-
-/* Mobile Responsiveness for Split Hero */
-@media (max-width: 768px) {
-  .process-split-hero {
-    flex-direction: column-reverse; 
-    text-align: center;
-    margin: 20px auto;
-  }
-  .process-split-text h1 {
-    font-size: 40px;
-  }
+  border-radius: 8px; /* Soft rounded corners */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Floating premium shadow */
 }
 
 /* Base Collage Container */
 .collage-section {
   max-width: 1000px;
-  margin: 15px auto; /* Slashed the top and bottom white space */
+  margin: 60px auto;
   padding: 0 20px;
 }
 
 /* Collage 1: Asymmetrical Architectural Grid */
 .collage-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr; 
-  gap: 10px; /* Slashed the gap between photos to tighten the collage */
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
 
 .collage-grid img {
@@ -766,16 +754,16 @@ process
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9; /* For the transparent PNG placeholders */
 }
 
 .collage-grid .tall-img {
   grid-row: span 2;
-  min-height: 510px; /* Massively increased to stop aggressive cropping */
+  min-height: 400px;
 }
 
 .collage-grid .short-img {
-  height: 250px; /* Massively increased to show much more of the photo */
+  height: 190px;
 }
 
 /* Collage 2: Editorial Overlap */
@@ -784,7 +772,7 @@ process
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 450px; 
+  min-height: 450px;
 }
 
 .collage-overlap img {
@@ -806,33 +794,72 @@ process
   right: 0;
   bottom: 20px;
   z-index: 2;
-  border: 12px solid white; 
+  border: 12px solid white; /* Creates a cool frame effect over the back image */
 }
-
-/* Mobile Responsiveness for Collages */
-@media(max-width: 768px) {
+/* Mobile Responsiveness for Process Layouts */
+@media (max-width: 768px) {
+  
+  /* 1. Split Hero (Forces full width so it's not tiny) */
+  .process-split-hero {
+    flex-direction: column-reverse; 
+    text-align: center;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  .process-split-image {
+    width: 100%;
+    display: block;
+  }
+  .process-split-image img {
+    width: 100%;
+    height: auto;
+  }
+  .process-split-text h1 {
+    font-size: 38px;
+  }
+  
+  /* 2. Collage Grid */
   .collage-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr; 
+    gap: 10px;
   }
   .collage-grid .tall-img {
-    grid-row: span 1;
-    min-height: 300px;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    aspect-ratio: auto;
+    height: 100%; 
   }
   .collage-grid .short-img {
-    height: 250px; 
+    grid-column: 2;
+    aspect-ratio: 4 / 3; 
   }
+
+  /* 3. Collage Overlap - FIXED */
   .collage-overlap {
-    flex-direction: column;
-    position: static;
-    min-height: auto;
-  }
-  .collage-overlap img {
-    position: static;
+    display: block; 
     width: 100%;
-    margin-bottom: 20px;
+    min-height: 0 !important; /* Kills any lingering desktop heights causing white space */
+    margin: 10px auto 30px; 
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .collage-overlap .img-back {
+    width: 80%; /* Pulled back slightly so it doesn't get covered as much */
+    aspect-ratio: 4 / 3;
+    margin: 0; 
+    display: block;
   }
   .collage-overlap .img-front {
-    border: none;
+    width: 50%; /* Scaled down slightly so it doesn't dominate */
+    aspect-ratio: 1 / 1;
+    margin-top: -12%; /* Less vertical pull-up so they aren't totally on top of each other */
+    margin-left: auto; /* Keeps it on the right */
+    border: 5px solid white;
+    display: block;
+    position: relative;
+    z-index: 2;
+    transform: none; 
   }
 }
 
